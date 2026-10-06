@@ -17,10 +17,10 @@ In this lab we wrote a light, half adder and a full adder MODULE. In th light mo
 ## Lab Questions
 
 ### 1 - How might you add more than two bits together?
-Start with a half adder that goes into a full adder to get the inital carry out value. You repeat the process with a 2 bit number but with an additional full adder.
+Start with a half adder which result goes into the carry in for the full adder. You repeat the process with a 2 bit number but with an additional full adder. The process gets multiplied as you try to add more bits. 
 
 ### 2 - What is the importance of the XOR gate in an adder?
-The xor gate lets us add the 2 bits together to either get a 1,0 or 2 which allows us to carry out a bit for the next adder. 
+The xor gate lets us minimize the amount of gates we use because of its efficiency. The output of a full adder is A xor B xor C instead of a long equation.
 
 ### 3 - What is the largest number a two bit adder can handle? What happens when you go over?
 The largest number a 2 bit adder can handle is 3 which is represented as 11 in binary beacause if you add 2 3's together you get 6 which is 110 in binary which is 3 bits. When you go over you have to send it to a carry out pin if you ignore the carry out the number wraps around to 0.  
